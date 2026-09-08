@@ -1,0 +1,27 @@
+{
+    "name": "smit-backend/mobile-sync-engine",
+    "description": "Offline-first delta synchronization engine tracking record version timestamps between mobile SQLite and backend cloud databases.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "smit-backend",
+            "homepage": "https://github.com/smit-backend"
+        }
+    ],
+    "require": {
+        "php": "^8.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "SmitBackend\\SyncVault\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SmitBackend\\SyncVault\\PackageServiceProvider"
+            ]
+        }
+    }
+}
